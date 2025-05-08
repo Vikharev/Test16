@@ -1,0 +1,21 @@
+[project]
+name = "test16"
+version = "0.1.0"
+description = "test description"
+authors = [
+    {name = "Alexey Vikharev",email = "a.v.vikharev@gmail.com"}
+]
+package-mode = false
+readme = "README.md"
+requires-python = "==3.12"
+dependencies = [
+    "selene (==2.0.0rc9)",
+    "pytest (==8.3.5)"
+]
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.6"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
